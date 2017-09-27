@@ -7,8 +7,18 @@ body {
     height: 400vh;
 }
 
+/*
 
-/*------ nav -----*/
+inhoudsopgave
+
+1 menu
+
+2 header
+
+*/
+
+
+/*------ 1 nav -----*/
 
 #menu {
     height: 55px;
@@ -47,7 +57,7 @@ nav ul {
 /*------------- end nav -----------*/
 
 
-/*------ header -----*/
+/*------ 2 header -----*/
 
 header {
     background: rgba(245, 245, 245, 1);
