@@ -46,7 +46,29 @@ nav a {
 
 nav ul {
     list-style-type: none;
+    height: 100%;
+    float: right;
 }
+
+nav ul li {
+    display: inline-block;
+    height: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    padding: 0 15px;
+}
+
+nav ul li a:hover {
+    color: #0088e3;
+    border-bottom: #0088e3 3px solid;
+}
+
 
 .menu_logo {
     height: 45px;
