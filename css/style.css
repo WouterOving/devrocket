@@ -63,7 +63,15 @@ header {
     position: relative;
 }
 
-header img {
+header div {
+    background-image: url(../images/star-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+header div img {
     width: 45%;
     height: auto;
     position: absolute;
@@ -74,3 +82,19 @@ header img {
 
 
 /*------------ end header ------------*/
+
+.test {
+    height: 100vh;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#383737+0,191818+100,e3eaed+100 */
+    background: #383737;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #383737 0%, #191818 100%, #e3eaed 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #383737 0%, #191818 100%, #e3eaed 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #383737 0%, #191818 100%, #e3eaed 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', endColorstr='#e3eaed', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
