@@ -193,17 +193,29 @@ header div img {
     line-height: 70px;
     height: 70px;
     margin: 5%;
-    background-color: #0088e3;
-    color: white;
     font-weight: 800;
+    
+    transition: ease all 150ms;
+}
+.portfolio div #wds_btn{
+    background-color: #fff;
+    color: #FFCC33;
+    border: solid 3px #FFCC33;
+}
+.portfolio div #wdv_btn{
+    background-color: #fff;
+    color: #A133FF;
+    border: solid 3px #A133FF;
 }
 
 .portfolio div #wds_btn:hover {
-    background-color: #fbbb17;
+    background-color: #FFCC33;
+    color: #fff;
 }
 
 .portfolio div #wdv_btn:hover {
-    background-color: #684a98;
+    background-color: #A133FF;
+    color: #fff;
 }
 
 
