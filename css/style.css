@@ -198,7 +198,6 @@ header div img {
     line-height: 70px;
     height: 70px;
     margin: 5%;
-<<<<<<< HEAD
     color: white;
     font-weight: 800;
 	transition: all 0.5s ease;
@@ -213,7 +212,6 @@ header div img {
 	background: #FFCC33;
 	color: #FFF;
 	transition: all 0.5s ease;
-=======
     font-weight: 800;
     transition: ease all 150ms;
 }
@@ -238,7 +236,6 @@ header div img {
 .portfolio div #wdv_btn:hover {
     background-color: #A133FF;
     color: #fff;
->>>>>>> 394bef15fc41c8bb12b51324e5046da76bd33f79
 }
 
 .portfolio div a:nth-child(3){

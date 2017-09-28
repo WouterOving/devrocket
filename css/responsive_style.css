@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1220px) {
+    nav {
+        width: 940px;
+    }
+    #footer_wrap {
+        width: 940px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    section {
+        width: 100%;
+        margin: 0% 5%,
+    }
+    
+    nav {
+        width: 90%;
+        margin: 0% 5%;
+    }
+    
+    nav ul {
+        width: 100%;
+
+    }
+    
+    nav li {
+        width: 100%;
+        text-align: center;
+
+    }
+    
+    nav ul li a {
+        width: 100%;
+        background-color: white;
+    }
+    
+    #footer_wrap {
+        width: 90%;
+        margin: 0% 5%;
+    }
+}
