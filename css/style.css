@@ -36,6 +36,10 @@ inhoudsopgave
 
 3 about
 
+4 portfolio
+
+5 contact
+
 */
 
 
@@ -204,7 +208,7 @@ header div img {
 /*------- end portfolio -------*/
 
 
-/*--- 4. contact ---*/
+/*--- 5. contact ---*/
 
 .contact {
     background: #383737;
@@ -219,4 +223,14 @@ header div img {
     /* IE6-9 fallback on horizontal gradient */
     height: 100vh;
     width: 100%;
+    position: relative;
+}
+
+.contact div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
 }
