@@ -214,7 +214,8 @@ header div img {
 /*--- 5. contact ---*/
 
 .contact {
-     background-color: white;
+    background-color: #f5f5f5;
+    border-top: solid 0.5px #95989A;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -229,11 +230,22 @@ header div img {
 }
 
 .contact #contact_wrap h1 {
-    margin: 5%;
+    margin: 12%;
+}
+
+.contact #contact_wrap i {
+    font-size: 2em;
+    margin: 12%;;
 }
 
 .contact #contact_wrap #phone {
     float: left;
+    margin: 10%;
+}
+
+.contact #contact_wrap #mail {
+    float: right;
+    margin: 10%;
 }
 /*------- end contact -------*/
 
@@ -247,4 +259,18 @@ footer {
     line-height: 55px;
     background-color: #474747;
     color: white;
+}
+
+#footer_wrap {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+#footer_wrap #facebook {
+    float: left;
+}
+
+#footer_wrap #copyright {
+    float: right;
 }
