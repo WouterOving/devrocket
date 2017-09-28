@@ -198,24 +198,9 @@ header div img {
     line-height: 70px;
     height: 70px;
     margin: 5%;
-<<<<<<< HEAD
     color: white;
     font-weight: 800;
 	transition: all 0.5s ease;
-}
-
-.portfolio div a:nth-child(2){
-	border: thin solid #FFCC33;
-	color: #FFCC33;
-}
-
-.portfolio div a:nth-child(2):hover{
-	background: #FFCC33;
-	color: #FFF;
-	transition: all 0.5s ease;
-=======
-    font-weight: 800;
-    transition: ease all 150ms;
 }
 
 .portfolio div #wds_btn {
@@ -238,18 +223,6 @@ header div img {
 .portfolio div #wdv_btn:hover {
     background-color: #A133FF;
     color: #fff;
->>>>>>> 394bef15fc41c8bb12b51324e5046da76bd33f79
-}
-
-.portfolio div a:nth-child(3){
-	border: thin solid #A133FF;
-	color: #A133FF;
-}
-
-.portfolio div a:nth-child(3):hover{
-	background: #A133FF;
-	color: #FFF;
-	transition: all 0.5s ease;
 }
 
 /*------- end portfolio -------*/
@@ -272,7 +245,7 @@ header div img {
     text-align: center;
 }
 
-.contact# #line {
+.contact #line {
     width: 20%;
     height: 1px;
 }
