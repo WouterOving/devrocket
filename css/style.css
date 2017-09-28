@@ -69,6 +69,12 @@ nav a {
     display: inline-block;
 }
 
+nav #menu_btn {
+    float: right;
+    font-size: 2em;
+    line-height: 60px;
+}
+
 nav ul {
     list-style-type: none;
     height: 100%;
@@ -281,7 +287,7 @@ header div img {
 }
 
 .contact #contact_wrap h1 {
-    margin: 12%;
+    margin: 12% 0%;
 }
 
 .contact #contact_wrap i {

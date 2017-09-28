@@ -7,5 +7,9 @@ $(document).ready(function () {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
+    
+    $("#menu_btn").click(function() {
+        $("nav ul").toggle();
+    })
 
 });

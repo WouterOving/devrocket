@@ -148,3 +148,9 @@
           opacity: 0;
       }
   }
+
+@media only screen and (max-width: 960px) {
+    svg {
+        width: 70%;
+    }
+}
