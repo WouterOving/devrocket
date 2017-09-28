@@ -187,6 +187,10 @@ header div img {
     position: absolute;
 }
 
+.portfolio h1{
+	font-size: 35px;
+}
+
 .portfolio div a {
     width: 250px;
     display: inline-block;
@@ -218,12 +222,6 @@ header div img {
 	background: #A133FF;
 	color: #FFF;
 	transition: all 0.5s ease;
-}
-
-.portfolio div button:hover {}
-
-.portfolio h1{
-	font-size: 35px;
 }
 
 /*------- end portfolio -------*/
