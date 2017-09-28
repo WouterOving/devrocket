@@ -73,6 +73,7 @@ nav #menu_btn {
     float: right;
     font-size: 2em;
     line-height: 60px;
+    display: none;
 }
 
 nav ul {
