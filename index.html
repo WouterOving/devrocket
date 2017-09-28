@@ -5,14 +5,22 @@
 <head>
 
     <title>DevRocket.</title>
+    <meta name="description" content="DevRocket. Online web solution. Wij maken professionele">
+
+
+=======
     <meta name="description" content="DevRocket. Online web solution">
-
-
+>>>>>>> f302a27eca1a37fb8954c3a6390a2b7275d877e8
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    
+    <title>DevRocket.</title>
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/animatie_logo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script/script_animatieLogo.js"></script>
 </head>
@@ -22,7 +30,7 @@
 
         <div id="menu">
             <nav>
-                <a href="index.html"><img class="menu_logo" src="images/devrocket-icon.png"></a>
+                <a href="#header"><img class="menu_logo" src="images/devrocket-icon.png"></a>
                 <ul>
                     <li><a href="#about">Over ons</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -31,7 +39,7 @@
             </nav>
         </div>
 
-        <header>
+        <header id="header">
             <div>
                 <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 244" style="enable-background:new 0 0 1200 244;" xml:space="preserve">
             
@@ -113,23 +121,33 @@
         <section class="portfolio" id="portfolio">
             <div>
                 <h1>Portfolio</h1>
-                <a href="#">WEBDESIGN</a>
-                <a href="#">WEBDEVELOPMENT</a>
+                <a id="wds_btn" href="#">WEBDESIGN</a>
+                <a id="wdv_btn" href="#">WEBDEVELOPMENT</a>
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <div>
+            <div id="contact_wrap">
                 <h1>Neem contact op met devrocket</h1>
+                <div id="line"></div>
                 <p>Gebruik onderstaande icons om een mail te sturen of om te bellen</p>
-                <div id="contact_icons">
-                    <img src="#" alt="">
+                <div id="phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>+31 6 231241</p>
+                </div>
+
+                <div id="mail">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p>info@devrocket.nl</p>
                 </div>
             </div>
         </section>
 
         <footer>
-
+            <div id="footer_wrap">
+                <p id="facebook">Volg ons op Facebook!</p>
+                <p id="copyright">©DevRocket 2017</p>
+            </div>
         </footer>
     </div>
     <script src="script/script.js"></script>

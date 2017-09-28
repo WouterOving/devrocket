@@ -87,6 +87,11 @@ nav ul li a {
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     padding: 0 15px;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 5c2fd410a192e01e15dd9daf4d849017a08b2572
+    transition: ease all 150ms;
 }
 
 nav ul li a:hover {
@@ -163,7 +168,7 @@ header div img {
 }
 
 .about #about_text h1 {
-    margin: 2%;
+    margin: 5%;
 }
 
 
@@ -197,6 +202,7 @@ header div img {
     line-height: 70px;
     height: 70px;
     margin: 5%;
+<<<<<<< HEAD
     color: white;
     font-weight: 800;
 	transition: all 0.5s ease;
@@ -211,6 +217,32 @@ header div img {
 	background: #FFCC33;
 	color: #FFF;
 	transition: all 0.5s ease;
+=======
+    font-weight: 800;
+    transition: ease all 150ms;
+}
+
+.portfolio div #wds_btn {
+    background-color: rgba( 255, 255, 255, 0.83 );
+    color: #FFCC33;
+    border: solid 3px #FFCC33;
+}
+
+.portfolio div #wdv_btn {
+    background-color: rgba( 255, 255, 255, 0.83 );
+    color: #A133FF;
+    border: solid 3px #A133FF;
+}
+
+.portfolio div #wds_btn:hover {
+    background-color: #FFCC33;
+    color: #fff;
+}
+
+.portfolio div #wdv_btn:hover {
+    background-color: #A133FF;
+    color: #fff;
+>>>>>>> 394bef15fc41c8bb12b51324e5046da76bd33f79
 }
 
 .portfolio div a:nth-child(3){
@@ -230,26 +262,67 @@ header div img {
 /*--- 5. contact ---*/
 
 .contact {
-    background: #383737;
-    /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #383737 0%, #191818 100%, #e3eaed 100%);
-    /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #383737 0%, #191818 100%, #e3eaed 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #383737 0%, #191818 100%, #e3eaed 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', endColorstr='#e3eaed', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+    border-top: solid 0.5px #95989A;
     height: 100vh;
     width: 100%;
     position: relative;
 }
 
-.contact div {
+.contact #contact_wrap {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.contact# #line {
+    width: 20%;
+    height: 1px;
+}
+
+.contact #contact_wrap h1 {
+    margin: 12%;
+}
+
+.contact #contact_wrap i {
+    font-size: 2em;
+    margin: 12%;
+    ;
+}
+
+.contact #contact_wrap #phone,
+#mail {
+    display: inline-block;
+    margin: 10%;
+}
+
+
+/*------- end contact -------*/
+
+
+/*--- 5. footer ---*/
+
+footer {
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 55px;
+    background-color: #474747;
     color: white;
+}
+
+#footer_wrap {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+#footer_wrap #facebook {
+    float: left;
+}
+
+#footer_wrap #copyright {
+    float: right;
 }
