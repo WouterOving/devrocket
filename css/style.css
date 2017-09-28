@@ -163,7 +163,7 @@ header div img {
 }
 
 .about #about_text h1 {
-    margin: 2%;
+    margin: 5%;
 }
 
 
@@ -198,11 +198,14 @@ header div img {
     font-weight: 800;
 }
 
-.portfolio div a:hover {
-    background-color: #2d2c2c;
+.portfolio div #wds_btn:hover {
+    background-color: #fbbb17;
 }
 
-.portfolio div button:hover {}
+.portfolio div #wdv_btn:hover {
+    background-color: #684a98;
+}
+
 
 
 /*------- end portfolio -------*/
@@ -211,26 +214,37 @@ header div img {
 /*--- 5. contact ---*/
 
 .contact {
-    background: #383737;
-    /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #383737 0%, #191818 100%, #e3eaed 100%);
-    /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #383737 0%, #191818 100%, #e3eaed 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #383737 0%, #191818 100%, #e3eaed 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', endColorstr='#e3eaed', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+     background-color: white;
     height: 100vh;
     width: 100%;
     position: relative;
 }
 
-.contact div {
+.contact #contact_wrap {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.contact #contact_wrap h1 {
+    margin: 5%;
+}
+
+.contact #contact_wrap #phone {
+    float: left;
+}
+/*------- end contact -------*/
+
+/*--- 5. footer ---*/
+
+footer {
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 55px;
+    background-color: #474747;
     color: white;
 }
