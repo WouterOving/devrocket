@@ -53,7 +53,7 @@ inhoudsopgave
     top: 0;
     left: 0;
     line-height: 60px;
-    background-color: #FFF;
+    background: rgba(245, 245, 245, 1);
     z-index: 400;
 }
 
@@ -145,15 +145,15 @@ header div img {
     height: 100vh;
     width: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#383737+0,191818+100,e3eaed+100 */
-    background: #383737;
+    background: #464646;
     /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #383737 0%, #191818 100%, #e3eaed 100%);
+    background: -moz-radial-gradient(center, ellipse cover, #363636 0%, #464646 100%, #565656 100%);
     /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #383737 0%, #191818 100%, #e3eaed 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #363636 0%, #464646 100%, #565656 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #383737 0%, #191818 100%, #e3eaed 100%);
+    background: radial-gradient(ellipse at center, #363636 0%, #464646 100%, #565656 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', endColorstr='#e3eaed', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#464646', endColorstr='#151515', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
     position: relative;
 }
@@ -221,19 +221,20 @@ header div img {
 	color: #FFF;
 	transition: all 0.5s ease;
     font-weight: 800;
-    transition: ease all 150ms;
 }
 
 .portfolio div #wds_btn {
     background-color: rgb(245, 245, 245);
     color: #FFCC33;
     border: solid 3px #FFCC33;
+    transition: ease all 150ms;
 }
 
 .portfolio div #wdv_btn {
     background-color: rgb(245, 245, 245);
     color: #A133FF;
     border: solid 3px #A133FF;
+    transition: ease all 150ms;
 }
 
 .portfolio div #wds_btn:hover {
