@@ -87,7 +87,10 @@ nav ul li a {
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     padding: 0 15px;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 5c2fd410a192e01e15dd9daf4d849017a08b2572
     transition: ease all 150ms;
 }
 
@@ -179,7 +182,6 @@ header div img {
     width: 100%;
     text-align: center;
     position: relative;
-    
 }
 
 .portfolio div {
@@ -197,15 +199,16 @@ header div img {
     height: 70px;
     margin: 5%;
     font-weight: 800;
-    
     transition: ease all 150ms;
 }
-.portfolio div #wds_btn{
+
+.portfolio div #wds_btn {
     background-color: #fff;
     color: #FFCC33;
     border: solid 3px #FFCC33;
 }
-.portfolio div #wdv_btn{
+
+.portfolio div #wdv_btn {
     background-color: #fff;
     color: #A133FF;
     border: solid 3px #A133FF;
@@ -220,7 +223,6 @@ header div img {
     background-color: #A133FF;
     color: #fff;
 }
-
 
 
 /*------- end portfolio -------*/
@@ -243,21 +245,30 @@ header div img {
     text-align: center;
 }
 
+.contact# #line {
+    width: 20%;
+    height: 1px;
+}
+
 .contact #contact_wrap h1 {
     margin: 12%;
 }
 
 .contact #contact_wrap i {
     font-size: 2em;
-    margin: 12%;;
+    margin: 12%;
+    ;
 }
 
-.contact #contact_wrap #phone ,#mail {
+.contact #contact_wrap #phone,
+#mail {
     display: inline-block;
     margin: 10%;
 }
 
+
 /*------- end contact -------*/
+
 
 /*--- 5. footer ---*/
 
