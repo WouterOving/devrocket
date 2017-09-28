@@ -8,9 +8,17 @@
 }
 
 @media only screen and (max-width: 960px) {
-    section {
-        width: 100%;
-        margin: 0% 5%,
+    
+    p{
+         font-size: 1em;
+    }
+    
+    .about #about_text {
+        width: 90%;
+    }
+    
+    .contact #contact_wrap {
+        width: 90%;
     }
     
     nav {
@@ -20,6 +28,7 @@
     
     nav ul {
         width: 100%;
+        display: none;
 
     }
     
