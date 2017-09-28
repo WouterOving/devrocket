@@ -180,7 +180,7 @@ header div img {
 }
 
 .portfolio div {
-    top: 50%;
+    top: 25%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -193,17 +193,38 @@ header div img {
     line-height: 70px;
     height: 70px;
     margin: 5%;
-    background-color: #0088e3;
     color: white;
     font-weight: 800;
+	transition: all 0.5s ease;
 }
 
-.portfolio div a:hover {
-    background-color: #2d2c2c;
+.portfolio div a:nth-child(2){
+	border: thin solid #FFCC33;
+	color: #FFCC33;
+}
+
+.portfolio div a:nth-child(2):hover{
+	background: #FFCC33;
+	color: #FFF;
+	transition: all 0.5s ease;
+}
+
+.portfolio div a:nth-child(3){
+	border: thin solid #A133FF;
+	color: #A133FF;
+}
+
+.portfolio div a:nth-child(3):hover{
+	background: #A133FF;
+	color: #FFF;
+	transition: all 0.5s ease;
 }
 
 .portfolio div button:hover {}
 
+.portfolio h1{
+	font-size: 35px;
+}
 
 /*------- end portfolio -------*/
 
