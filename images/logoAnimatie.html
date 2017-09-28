@@ -1,38 +1,145 @@
-<!doctype html>
-
-<html>
-
-<head>
-
-    <title>DevRocket.</title>
-    <meta name="description" content="DevRocket. Online web solution">
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/animatie_logo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script/script_animatieLogo.js"></script>
-</head>
-
-<body>
-
-    <div id="menu">
-        <nav>
-            <a href="index.html"><img class="menu_logo" src="images/devrocket-icon.png"></a>
-            <ul>
-                <li><a href="#">Polio</a></li>
-                <li><a href="#">Polio</a></li>
-                <li><a href="#">Polio</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <header>
-        <div>
-            <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 244" style="enable-background:new 0 0 1200 244;" xml:space="preserve">
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            
+            svg{
+                position: relative;
+                margin: auto;
+                left: 50%;
+                top: 50vh;
+                transform: translate3d(-50%, -50%, 0px);
+                width: 600px;
+                overflow: visible;
+            }
+            
+            .group_1{
+                fill: #0088E3;
+            }
+            
+            .group_2{
+                fill: #464646;
+            }
+            
+            .group_3{
+                fill: #464646;
+            }
+            
+            .path_1{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 0.5s;
+            }
+            .path_2{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 0.6s;
+            }
+            .path_3{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 0.7s;
+            }
+            .path_4{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 0.8s;
+            }
+            .path_10{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 0.9s;
+            }
+            .path_5{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 1s;
+            }
+            .path_6{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 1.1s;
+            }
+            .path_7{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 1.2s;
+            }
+            .path_8{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 1.3s;
+            }
+            .path_9{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 1.4s;
+            }
+            .parth_11{
+                opacity: 0;
+                animation: show 1s ease forwards;
+                animation-delay: 1.4s;
+            }
+            
+            .path_rocket{
+                fill: #0088E3;
+                z-index: 1000;
+                opacity: 0;
+                animation: show 1s 1s ease forwards;
+            }
+            .path_fire{
+                opacity: 0;
+                animation: show 1s 1s ease forwards;
+            }
+            
+            .hoveredRocket{animation: rocket_power 0.9s ease-in;}
+            .hoveredFire{animation: rocket_fire 0.9s ease-in;}
+            
+            @keyframes show{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes rocket_fire{
+                0%{
+                    transform: translate3D(0px, 0px, 0px);
+                    opacity: 1;
+                }
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    transform: translate3D(380px, -380px, 0px);
+                    opacity: 0;
+                }
+            }
+            @keyframes rocket_power{
+                0%{
+                    transform: translate3D(0px, 0px, 0px);
+                    opacity: 1;
+                }
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    transform: translate3D(400px, -400px, 0px);
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    
+    <body> 
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 244" style="enable-background:new 0 0 1200 244;" xml:space="preserve">
             
             <title>SVG Animation</title>
             
@@ -97,21 +204,21 @@
                 <path class="path_rocket path_fire" d="M559.3,163.5c0.8-2.4,1.6-4.8,2.4-7.4c-10.3,3.3-14.6,15.2-14.5,24.4c10.4,0,21.5-5,24.3-14.5c-4.9,1.6-9.7,3.2-14.8,4.9 C557.7,168.3,558.5,165.9,559.3,163.5z"/>
             </g>
         </svg>
-        </div>
-    </header>
+    </body>
     
-    <div class="about">
-        <div id="about_text">
-            <h1>Over ons</h1>
-            <p></p>
-        </div>
-    </div>
-
-    <footer>
-
-    </footer>
-    <script src="script/script.js"></script>
-
-</body>
-
+    <script>
+        var hoverTimeout;
+        $('svg').hover(function() {
+            clearTimeout(hoverTimeout);
+            $('.path_rocket').addClass('hoveredRocket');
+            $('.path_fire').addClass('hoveredFire');
+            console.log(hoverTimeout);
+        }, function() {
+            var self = $(this);
+            hoverTimeout = setTimeout(function() {
+                $('.path_rocket').removeClass('hoveredRocket');
+                $('.path_fire').removeClass('hoveredFire');
+            }, 1500);
+        });
+    </script>
 </html>
