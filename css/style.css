@@ -199,13 +199,13 @@ header div img {
 }
 
 .portfolio div #wds_btn {
-    background-color: #fff;
+    background-color: rgba( 255, 255, 255, 0.83 );
     color: #FFCC33;
     border: solid 3px #FFCC33;
 }
 
 .portfolio div #wdv_btn {
-    background-color: #fff;
+    background-color: rgba( 255, 255, 255, 0.83 );
     color: #A133FF;
     border: solid 3px #A133FF;
 }
