@@ -216,7 +216,7 @@ header div img {
 .portfolio div #wdv_btn:hover {
     background-color: #A133FF;
     color: #fff;
-}#000000
+}
 
 
 
@@ -250,15 +250,11 @@ header div img {
     margin: 12%;;
 }
 
-.contact #contact_wrap #phone {
-    float: left;
+.contact #contact_wrap #phone ,#mail {
+    display: inline-block;
     margin: 10%;
 }
 
-.contact #contact_wrap #mail {
-    float: right;
-    margin: 10%;
-}
 /*------- end contact -------*/
 
 /*--- 5. footer ---*/
