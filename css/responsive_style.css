@@ -27,6 +27,7 @@
         margin: 0% 5%;
         position: static;
         z-index: 100;
+        background: rgba(245, 245, 245, 1);
     }
     nav ul {
         position: absolute;
