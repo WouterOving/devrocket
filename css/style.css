@@ -201,7 +201,8 @@ header div img {
 
 .portfolio h1{
 	font-size: 35px;
-    padding-top: 10%;
+    position: relative;
+    top: 10%;
 }
 
 .portfolio div a {
@@ -321,6 +322,10 @@ footer {
     line-height: 55px;
     background-color: #474747;
     color: white;
+}
+
+footer #footer_wrap i { 
+    color: #393939;
 }
 
 #footer_wrap {

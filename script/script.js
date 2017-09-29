@@ -15,4 +15,10 @@ $(document).ready(function () {
     $("nav a").click(function() {
         $('nav ul').removeClass("open_menu");
     })
+    
+    if($(".open_menu").show()) {
+        $("body").css({
+            overflow: hidden,
+        })
+    }
 });
