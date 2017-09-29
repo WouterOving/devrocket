@@ -12,7 +12,7 @@ $(document).ready(function () {
         $("nav ul").toggleClass("open_menu");
     })
     
-    $("nav ul li a").click(function() {
+    $("nav a").click(function() {
         $('nav ul').toggleClass("open_menu");
     })
 
