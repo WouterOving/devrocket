@@ -9,15 +9,11 @@ $(document).ready(function () {
     });
     
     $("#menu_btn").click(function() {
-        $("nav ul").toggle();
+        $("nav ul").toggleClass("open_menu");
     })
     
     $("nav ul li a").click(function() {
-        $("nav ul").hide();
-    })
-    
-    $("html").scroll(function() {
-        $("nav ul").hide();
+        $('nav ul').toggleClass("open_menu");
     })
 
 });
