@@ -11,5 +11,13 @@ $(document).ready(function () {
     $("#menu_btn").click(function() {
         $("nav ul").toggle();
     })
+    
+    $("nav ul li a").click(function() {
+        $("nav ul").hide();
+    })
+    
+    $("body").scroll(function() {
+        $("nav ul").hide();
+    })
 
 });

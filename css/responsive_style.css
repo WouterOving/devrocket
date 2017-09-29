@@ -8,55 +8,46 @@
 }
 
 @media only screen and (max-width: 960px) {
-    
-    
-    p{
-         font-size: 1em;
+    p {
+        font-size: 1em;
     }
-    
     .about #about_text {
         width: 90%;
     }
-    
     .contact #contact_wrap {
         width: 90%;
     }
-    
     nav {
         width: 90%;
         margin: 0% 5%;
     }
-    
     nav ul {
-        width: 100%;
+        position: absolute;
+        width: 100vw;
+        top: 55px;
+        left: -30px;
         display: none;
-
     }
     
     nav li {
         width: 100%;
         text-align: center;
-
     }
-    
     nav ul li a {
         width: 100%;
         background-color: white;
     }
-    
     nav #menu_btn {
         display: block;
+        cursor: pointer;
     }
-    
     #footer_wrap {
         width: 90%;
         margin: 0% 5%;
     }
-    
     #footer_wrap #facebook {
         display: none;
     }
-    
     #footer_wrap #copyright {
         float: none;
         text-align: center;

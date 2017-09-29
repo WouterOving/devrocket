@@ -80,17 +80,20 @@ nav ul {
     list-style-type: none;
     height: 100%;
     float: right;
+    background-color: rgba(245, 245, 245, 1);
 }
 
 nav ul li {
     display: inline-block;
     height: 100%;
+    background-color: rgba(245, 245, 245, 1);
 }
 
 nav ul li a {
     display: inline-block;
     text-decoration: none;
     color: black;
+    background-color: rgba(245, 245, 245, 1);
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     padding: 0 15px;
