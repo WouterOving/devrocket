@@ -16,7 +16,7 @@ $(document).ready(function () {
         $("nav ul").hide();
     })
     
-    $("body").scroll(function() {
+    $("html").scroll(function() {
         $("nav ul").hide();
     })
 

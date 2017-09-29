@@ -28,15 +28,19 @@
         left: -30px;
         display: none;
     }
-    
     nav li {
         width: 100%;
         text-align: center;
     }
     nav ul li a {
         width: 100%;
-        background-color: white;
+        background-color: rgba(245, 245, 245, 1);
     }
+    
+    nav ul li:last-child a {
+        box-shadow: rgba( 0, 0, 0, 0.845) 0 2px 6px -2px;
+    }
+    
     nav #menu_btn {
         display: block;
         cursor: pointer;
