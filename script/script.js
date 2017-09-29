@@ -13,7 +13,6 @@ $(document).ready(function () {
     })
     
     $("nav a").click(function() {
-        $('nav ul').toggleClass("open_menu");
+        $('nav ul').removeClass("open_menu");
     })
-
 });
