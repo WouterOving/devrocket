@@ -17,11 +17,9 @@
     .contact #contact_wrap {
         width: 90%;
     }
-    
     #menu {
         z-index: 300;
     }
-    
     nav {
         width: 90%;
         margin: 0% 5%;
@@ -46,11 +44,9 @@
         width: 100%;
         background-color: rgba(245, 245, 245, 1);
     }
-    
     nav ul li:last-child a {
         box-shadow: rgba( 0, 0, 0, 0.845) 0 2px 6px -2px;
     }
-    
     .open_menu {
         top: 55px;
         position: absolute;
@@ -60,12 +56,23 @@
         z-index: -100;
         width: 100vw;
     }
-    
     nav #menu_btn {
         display: block;
         cursor: pointer;
         color: #393939;
     }
+    .portfolio div #wds_btn {
+        color: #fff;
+        border: solid 3px #FFCC33;
+        background-color: #FFCC33
+    }
+    
+    .portfolio div #wdv_btn {
+        background-color: #A133FF;
+        color: #fff;
+        border: solid 3px #A133FF;
+    }
+
     #footer_wrap {
         width: 90%;
         margin: 0% 5%;

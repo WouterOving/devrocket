@@ -233,6 +233,7 @@ header div img {
     color: #FFCC33;
     border: solid 3px #FFCC33;
     transition: ease all 150ms;
+    font-weight: 800;
 }
 
 .portfolio div #wdv_btn {
@@ -240,6 +241,7 @@ header div img {
     color: #A133FF;
     border: solid 3px #A133FF;
     transition: ease all 150ms;
+    font-weight: 800;
 }
 
 .portfolio div #wds_btn:hover {
