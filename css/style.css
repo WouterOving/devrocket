@@ -189,23 +189,30 @@ header div img {
     width: 100%;
     text-align: center;
     position: relative;
+	overflow: hidden;
+	transition: all 1s ease-in-out;
 }
 
-.portfolio div {
-    top: 50%;
+.portfolio_toggle{
+	height: 150vh;
+	
+}
+
+.buttons {
+    top: 20vh;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
 }
 
 .portfolio h1{
 	font-size: 35px;
     position: relative;
-    top: 10%;
+    top: 10vh;
 }
 
-.portfolio div a {
+.buttons a {
     width: 250px;
     display: inline-block;
     line-height: 70px;
@@ -214,55 +221,185 @@ header div img {
     color: white;
     font-weight: 800;
 	transition: all 0.5s ease;
+	cursor: pointer;
+	margin-bottom: 0px;
 }
 
-.portfolio div a:nth-child(2){
+.buttons a:nth-child(2){
 	border: thin solid #FFCC33;
 	color: #FFCC33;
 }
 
-.portfolio div a:nth-child(2):hover{
+.buttons a:nth-child(2):hover{
 	background: #FFCC33;
 	color: #FFF;
 	transition: all 0.5s ease;
     font-weight: 800;
 }
 
-.portfolio div #wds_btn {
+.buttons #wds_btn {
     background-color: rgb(245, 245, 245);
     color: #FFCC33;
     border: solid 3px #FFCC33;
     transition: ease all 150ms;
-    font-weight: 800;
 }
 
-.portfolio div #wdv_btn {
+.buttons #wdv_btn {
     background-color: rgb(245, 245, 245);
     color: #A133FF;
     border: solid 3px #A133FF;
     transition: ease all 150ms;
-    font-weight: 800;
 }
 
-.portfolio div #wds_btn:hover {
+.buttons #wds_btn:hover {
     background-color: #FFCC33;
     color: #fff;
 }
 
-.portfolio div #wdv_btn:hover {
+.buttons #wdv_btn:hover {
     background-color: #A133FF;
     color: #fff;
 }
 
-.portfolio div a:nth-child(3){
+.buttons a:nth-child(3){
 	border: thin solid #A133FF;
 	color: #A133FF;
 }
 
-.portfolio div a:nth-child(3):hover{
+.buttons a:nth-child(3):hover{
 	background: #A133FF;
 	color: #FFF;
 	transition: all 0.5s ease;
+}
+
+.btn_toggle_wds{
+	background-color: #FFCC33!important;
+    color: #fff!important;
+}
+
+.btn_toggle_wdv{
+	background-color: #A133FF!important;
+    color: #fff!important;
+}
+
+.wds, .wdv{
+	height: 65vh;
+	width: 100vw;
+	position: relative;
+	bottom: 0;
+	top: 15vh;
+	display: none;
+	background: #393939;
+}
+
+.persoon_section{
+	width: 58vw;
+	height: 90%;
+	margin: auto;
+	overflow: hidden
+}
+
+.persoon_wrapper{
+	width: 130%;
+	height: 100%;
+}
+
+.persoon{
+	height: 57vh;
+	width: 18vw;
+	float: left;
+	margin: 25px 10px 55px;
+	cursor: pointer;
+	transition: all ease-in 1s;
+	overflow: hidden;
+}
+
+.persoon_toggle{
+	width: 60vw;
+	height: 51vh;
+}
+
+.persoon img{
+	height: 51vh;
+	width: 18vw;
+	float: left;
+}
+
+.m33{
+	margin-left: -33.33%
+}
+
+.m66{
+	margin-left: -66.66%
+}
+
+.lid{
+	height: 56vh;
+	width: 18vw;
+	float: left;
+	margin: 0px 20px 0px 0px;
+	transition: all ease-in 1s;
+}
+
+.lid_toggle{
+	width: 31%;
+}
+
+.wds .persoon{
+	background: #FFCC33;
+}
+
+.wdv .persoon{
+	background: #A133FF;
+	color: white;
+}
+
+.lid h2{
+	display: table;
+	margin: auto;
+	padding: 10px;
+}
+
+.lid_text{
+	display: none;
+	width: 55%;
+	height: 95%;
+	float: left;
+	margin: 20px 20px 0px 10px;
+	transition: all ease-in 1s;
+}
+
+.wds .lid_text{
+	background: #FFCC33;
+}
+
+.wdv .lid_text{
+	background: #A133FF;
+	color: white;
+}
+
+
+.persoon_portfolio{
+	display: none;
+	width: 100vw;
+	height: 50vh;
+	margin-top: 5vh;
+	background: #393939;
+	color: white;
+}
+
+.portfolio_btn, .persoon_btn{
+	width: 250px;
+    display: inline-block;
+    line-height: 70px;
+    height: 70px;
+    margin: 5%;
+    color: white;
+	background: #171717;
+    font-weight: 800;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	margin-bottom: 0px;
 }
 
 /*------- end portfolio -------*/
