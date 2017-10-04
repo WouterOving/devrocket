@@ -10,11 +10,23 @@ $(document).ready(function () {
     
     $("#menu_btn").click(function() {
         $("nav ul").toggleClass("open_menu");
-    })
+    });
     
     $("nav a").click(function() {
         $('nav ul').removeClass("open_menu");
     });
+	
+	$("#wds_btn").click(function(){
+		$("#wds_btn").toggleClass("btn_toggle_wds");
+		$(".wds").toggle('blind');
+				
+	});
+	
+	$("#wdv_btn").click(function(){
+		$("#wdv_btn").toggleClass("btn_toggle_wdv");
+		$(".wdv").toggle('blind');
+		
+	});
 	
 	$(".ett").click(function(){
 		$(".een").find(".lid_text").toggle('fade');
