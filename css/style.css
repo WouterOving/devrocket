@@ -426,11 +426,13 @@ header div img {
 
 .contact #line {
     width: 20%;
-    height: 1px;
+    height: 2px;
+    background-color: #0088E3;
+    margin: 5% auto;
 }
 
 .contact #contact_wrap h1 {
-    margin: 12% 0%;
+    margin: 4% 0%;
 }
 
 .contact #contact_wrap i {
