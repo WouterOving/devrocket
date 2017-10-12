@@ -5,6 +5,11 @@
     #footer_wrap {
         width: 940px;
     }
+    
+    .subtitle {
+        font-size: 1.4em;
+    }
+    
 }
 
 @media only screen and (max-width: 960px) {
@@ -61,6 +66,11 @@
         cursor: pointer;
         color: #393939;
     }
+    
+    .subtitle {
+        font-size: 1em;
+    }
+    
     .portfolio div #wds_btn {
         color: #fff;
         border: solid 3px #FFCC33;

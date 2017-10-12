@@ -14,7 +14,6 @@
 }
 
 body {
-    height: 400vh;
     font-family: 'Roboto', sans-serif;
     background: rgba(245, 245, 245, 1);
     background: -moz-radial-gradient(center, ellipse cover, rgba(245, 245, 245, 1) 0%, rgba(245, 245, 245, 0.99) 50%, rgba(204, 204, 204, 0.98) 100%);
@@ -152,10 +151,12 @@ header div img {
 .subtitle{
 	top: 63%;
     left: 50%;
+    font-size: 150%;
     transform: translate(-50%, -63%);
 	position: absolute;
     text-align: center;
 	color: #474747;
+    width: 80%;
 	display: none;
 }
 
@@ -210,17 +211,17 @@ header div img {
 /*--- 4. portfolio ---*/
 
 .portfolio {
-    height: 100vh;
+    position: relative;
+    min-height: 50vh;
+    height: auto;
     width: 100%;
     text-align: center;
-    position: relative;
 	overflow: hidden;
 	transition: all 1s ease-in-out;
 }
 
 .portfolio_toggle{
 	height: 150vh;
-	
 }
 
 .buttons {
@@ -278,7 +279,7 @@ header div img {
 
 .buttons #wds_btn:hover {
     background-color: #FFCC33;
-    color: #fff;
+    color: #000;
 }
 
 .buttons #wdv_btn:hover {
@@ -297,134 +298,158 @@ header div img {
 	transition: all 0.5s ease;
 }
 
-.btn_toggle_wds{
-	background-color: #FFCC33!important;
-    color: #fff!important;
+.portfolio-container{
+    position: relative;
+    display: none;
+    margin: auto;
+    margin-top:105px;
+    width: 100%;
+    height: 100vh;
+    background-color: #393939;
+    box-shadow: inset 0px 10px 20px -5px rgba( 0, 0, 0, 0.8),
+                inset 0px -10px 20px -5px rgba( 0, 0, 0, 0.8);
 }
 
-.btn_toggle_wdv{
-	background-color: #A133FF!important;
-    color: #fff!important;
+.wds-container{
+    position: relative;
+    overflow: hidden;
+    display: none;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1200px;
+    height: 75%;
+    text-align: left;
+}
+.wds-persoon{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 32.33%;
+    margin-left: 5px;
+    margin-right: 5px;
+    left: 0%;
+    height: 100%;
+    background-color: #FFCC33;
+    cursor: pointer;
+}
+.wds-persoon .img-persoon{
+    width: 100%;
+}
+.wds-persoon h5{
+    position: relative;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 75px;
 }
 
-.wds, .wdv{
-	height: 65vh;
-	width: 100vw;
-	position: relative;
-	bottom: 0;
-	top: 15vh;
-	display: none;
-	background: #393939;
+.wds-profile{
+    top: 0px;
 }
-
-.persoon_section{
-	width: 58vw;
-	height: 90%;
-	margin: auto;
-	overflow: hidden
+.wds-content{
+    position: relative;
+    z-index: 100;
+    top: 100%;
+    width: 299%;
+    height: 100%;
+    background-color: #FFCC33;
+    margin: 0 0.665% 0 0.665%;
+    padding-top: 50px;
+    text-align: center;
+    
+    transition: ease all 300ms;
 }
-
-.persoon_wrapper{
-	width: 130%;
-	height: 100%;
+.alpay .wds-content{
+    left: 0px;
 }
-
-.persoon{
-	height: 57vh;
-	width: 18vw;
-	float: left;
-	margin: 25px 10px 55px;
-	cursor: pointer;
-	transition: all ease-in 1s;
-	overflow: hidden;
+.sam .wds-content{
+    left: -100%;
 }
-
-.persoon_toggle{
-	width: 60vw;
-	height: 51vh;
+.wouter .wds-content{
+    left: -200%;
 }
-
-.persoon img{
-	height: 51vh;
-	width: 18vw;
-	float: left;
+.wds-content-show{
+    top: 0px;
 }
-
-.m33{
-	margin-left: -33.33%
+.mockups-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
-
-.m66{
-	margin-left: -66.66%
-}
-
-.lid{
-	height: 56vh;
-	width: 18vw;
-	float: left;
-	margin: 0px 20px 0px 0px;
-	transition: all ease-in 1s;
-}
-
-.lid_toggle{
-	width: 31%;
-}
-
-.wds .persoon{
-	background: #FFCC33;
-}
-
-.wdv .persoon{
-	background: #A133FF;
-	color: white;
-}
-
-.lid h2{
-	display: table;
-	margin: auto;
-	padding: 10px;
-}
-
-.lid_text{
-	display: none;
-	width: 55%;
-	height: 95%;
-	float: left;
-	margin: 20px 20px 0px 10px;
-	transition: all ease-in 1s;
-}
-
-.wds .lid_text{
-	background: #FFCC33;
-}
-
-.wdv .lid_text{
-	background: #A133FF;
-	color: white;
+.mockups-container .mockups{
+    position: relative;
+    bottom: 0px;
+    float: left;
+    width: 33.33%;
+    height: auto;
+    padding: 5px;
 }
 
 
-.persoon_portfolio{
-	display: none;
-	width: 100vw;
-	height: 50vh;
-	margin-top: 5vh;
-	background: #393939;
-	color: white;
+/*-------- wdv --------*/
+
+.wdv-container{
+    position: relative;
+    overflow: hidden;
+    display: none;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1200px;
+    height: 75%;
+    text-align: left;
+    color: #fff;
+}
+.wdv-persoon{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 32.33%;
+    margin-left: 5px;
+    margin-right: 5px;
+    left: 0%;
+    height: 100%;
+    background-color: #A133FF;
+    cursor: pointer;
+}
+.wdv-persoon .img-persoon{
+    width: 100%;
+}
+.wdv-persoon h5{
+    position: relative;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 75px;
 }
 
-.portfolio_btn, .persoon_btn{
-	width: 250px;
-    display: inline-block;
-    line-height: 70px;
-    height: 70px;
-    margin: 5%;
-    color: white;
-	background: #171717;
-    font-weight: 800;
-	transition: all 0.5s ease;
-	cursor: pointer;
-	margin-bottom: 0px;
+.wdv-profile{
+    top: 0px;
+}
+.wdv-content{
+    position: relative;
+    z-index: 100;
+    top: 100%;
+    width: 299%;
+    height: 100%;
+    background-color: #A133FF;
+    margin: 0 0.665% 0 0.665%;
+    padding-top: 50px;
+    text-align: center;
+    
+    transition: ease all 300ms;
+}
+.andy .wdv-content{
+    left: 0px;
+}
+.thom .wdv-content{
+    left: -100%;
+}
+.kevin .wdv-content{
+    left: -200%;
+}
+.wdv-content-show{
+    top: 0px;
 }
 
 /*------- end portfolio -------*/
