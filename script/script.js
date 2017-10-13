@@ -21,5 +21,11 @@ $(document).ready(function () {
         $('nav ul').removeClass("open_menu");
     });
     
+    $(".port_btn i").click(function() {
+        $(".portfolio").css({
+            height: "auto"
+        })
+    });
+    
     
 });

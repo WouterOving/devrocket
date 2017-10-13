@@ -226,11 +226,11 @@ header div img {
 
 .portfolio {
     position: relative;
-    height: calc(100vh - 60px);
+    height: 50vw;
     width: 100%;
     text-align: center;
 	overflow: hidden;
-	transition: all 1s ease-in-out;
+	transition: all 1s;
 }
 
 .portfolio_content {
@@ -242,11 +242,29 @@ header div img {
 }
 
 .portfolio_content article {
-    height: 50%;
-    width: 33.33%;
+    height: 25vw;
+    width: 25%;
     display: inline-block;
     border: red solid 1px;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+article img {
+    height: auto;
+    width: 100%;
+
+}
+
+.port_btn {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+}
+
+.port_btn i {
+    font-size: 4em;
 }
 
 
