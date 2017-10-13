@@ -21,9 +21,5 @@ $(document).ready(function () {
         $('nav ul').removeClass("open_menu");
     });
     
-    $(".sider button:nth-child(1)").click {
-        
-    }
-    
     
 });

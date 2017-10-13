@@ -233,56 +233,14 @@ header div img {
 	transition: all 1s ease-in-out;
 }
 
-.slider {
+.portfolio_content {
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
 
-.slider button {
-    position: absolute;
-}
-
-.slider button:nth-child(2) {
-    left: 5%;
-    top: 50%;
-    transform: translate(-5%, 50%);
-}
-
-.slider button:nth-child(1) {
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%, 50%);
-}
-
-.slider_content_wrap {
-    height: 100%;
-    width: 200vw;
-    font-size: 0;
-}
-
-.content {
-    width: 100vw;
-    height: 100%;
-    font-size: 0;
-    display: inline-block;
-}
-
-.content article {
-    height: 50%;
-    width: 33.33%;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    background-color: red;
-    border: yellow 1px solid;
-    box-sizing: border-box;
-}
-
-.content:nth-child(2) article {
-    background-color: blue;
-}
+.
 
 /*------- end portfolio -------*/
 
