@@ -12,5 +12,6 @@ $(document).ready(function () {
             $('.path_fire').removeClass('hoveredFire');
         }, 1500);
     });
-
+    
+    $(".subtitle").delay( 1700 ).fadeIn( 800 );
 });
