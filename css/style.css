@@ -25,9 +25,18 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#cccccc', GradientType=1);
 }
 
-#wrap {
+#background-wrap {
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+#background {
+    position: relative;
+    top: -50vh;
+    height: 300%;
+    width: 100vw;
     background-image: url(../images/blackground-devrocket.svg);
-    background-attachment: fixed;
 }
 
 a {
@@ -217,244 +226,62 @@ header div img {
 
 .portfolio {
     position: relative;
-    min-height: 50vh;
-    height: auto;
+    height: calc(100vh - 60px);
     width: 100%;
     text-align: center;
 	overflow: hidden;
 	transition: all 1s ease-in-out;
 }
 
-.portfolio_toggle{
-	height: 150vh;
-}
-
-.buttons {
-    top: 20vh;
-    left: 50%;
+.slider {
     width: 100%;
-    transform: translate(-50%, -50%);
-    position: relative;
-}
-
-.portfolio h1{
-	font-size: 35px;
-    position: relative;
-    top: 10vh;
-}
-
-.buttons a {
-    width: 250px;
-    display: inline-block;
-    line-height: 70px;
-    height: 70px;
-    margin: 5%;
-    color: white;
-    font-weight: 800;
-	transition: all 0.5s ease;
-	cursor: pointer;
-	margin-bottom: 0px;
-}
-
-.buttons a:nth-child(2){
-	border: thin solid #FFCC33;
-	color: #FFCC33;
-}
-
-.buttons a:nth-child(2):hover{
-	background: #FFCC33;
-	color: #FFF;
-	transition: all 0.5s ease;
-    font-weight: 800;
-}
-
-.buttons #wds_btn {
-    background-color: rgb(245, 245, 245);
-    color: #FFCC33;
-    border: solid 3px #FFCC33;
-    transition: ease all 150ms;
-}
-
-.buttons #wdv_btn {
-    background-color: rgb(245, 245, 245);
-    color: #A133FF;
-    border: solid 3px #A133FF;
-    transition: ease all 150ms;
-}
-
-.buttons #wds_btn:hover {
-    background-color: #FFCC33;
-    color: #000;
-}
-
-.buttons #wdv_btn:hover {
-    background-color: #A133FF;
-    color: #fff;
-}
-
-.buttons a:nth-child(3){
-	border: thin solid #A133FF;
-	color: #A133FF;
-}
-
-.buttons a:nth-child(3):hover{
-	background: #A133FF;
-	color: #FFF;
-	transition: all 0.5s ease;
-}
-
-.portfolio-container{
-    position: relative;
-    display: none;
-    margin: auto;
-    margin-top:105px;
-    width: 100%;
-    height: 100vh;
-    background-color: #393939;
-    box-shadow: inset 0px 10px 20px -5px rgba( 0, 0, 0, 0.8),
-                inset 0px -10px 20px -5px rgba( 0, 0, 0, 0.8);
-}
-
-.wds-container{
-    position: relative;
+    height: 100%;
     overflow: hidden;
-    display: none;
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1200px;
-    height: 75%;
-    text-align: left;
-}
-.wds-persoon{
     position: relative;
-    box-sizing: border-box;
-    float: left;
-    width: 32.33%;
-    margin-left: 5px;
-    margin-right: 5px;
-    left: 0%;
-    height: 100%;
-    background-color: #FFCC33;
-    cursor: pointer;
-}
-.wds-persoon .img-persoon{
-    width: 100%;
-}
-.wds-persoon h5{
-    position: relative;
-    font-size: 1.3rem;
-    text-align: center;
-    line-height: 75px;
 }
 
-.wds-profile{
-    top: 0px;
-}
-.wds-content{
-    position: relative;
-    z-index: 100;
-    top: 100%;
-    width: 299%;
-    height: 100%;
-    background-color: #FFCC33;
-    margin: 0 0.665% 0 0.665%;
-    padding-top: 50px;
-    text-align: center;
-    
-    transition: ease all 300ms;
-}
-.alpay .wds-content{
-    left: 0px;
-}
-.sam .wds-content{
-    left: -100%;
-}
-.wouter .wds-content{
-    left: -200%;
-}
-.wds-content-show{
-    top: 0px;
-}
-.mockups-container{
+.slider button {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-.mockups-container .mockups{
-    position: relative;
-    bottom: 0px;
-    float: left;
-    width: 33.33%;
-    height: auto;
-    padding: 5px;
 }
 
-
-/*-------- wdv --------*/
-
-.wdv-container{
-    position: relative;
-    overflow: hidden;
-    display: none;
-    margin: auto;
+.slider button:nth-child(2) {
+    left: 5%;
     top: 50%;
-    transform: translateY(-50%);
-    width: 1200px;
-    height: 75%;
-    text-align: left;
-    color: #fff;
-}
-.wdv-persoon{
-    position: relative;
-    box-sizing: border-box;
-    float: left;
-    width: 32.33%;
-    margin-left: 5px;
-    margin-right: 5px;
-    left: 0%;
-    height: 100%;
-    background-color: #A133FF;
-    cursor: pointer;
-}
-.wdv-persoon .img-persoon{
-    width: 100%;
-}
-.wdv-persoon h5{
-    position: relative;
-    font-size: 1.3rem;
-    text-align: center;
-    line-height: 75px;
+    transform: translate(-5%, 50%);
 }
 
-.wdv-profile{
-    top: 0px;
+.slider button:nth-child(1) {
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, 50%);
 }
-.wdv-content{
-    position: relative;
-    z-index: 100;
-    top: 100%;
-    width: 299%;
+
+.slider_content_wrap {
     height: 100%;
-    background-color: #A133FF;
-    margin: 0 0.665% 0 0.665%;
-    padding-top: 50px;
-    text-align: center;
-    
-    transition: ease all 300ms;
+    width: 200vw;
+    font-size: 0;
 }
-.andy .wdv-content{
-    left: 0px;
+
+.content {
+    width: 100vw;
+    height: 100%;
+    font-size: 0;
+    display: inline-block;
 }
-.thom .wdv-content{
-    left: -100%;
+
+.content article {
+    height: 50%;
+    width: 33.33%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    border: yellow 1px solid;
+    box-sizing: border-box;
 }
-.kevin .wdv-content{
-    left: -200%;
-}
-.wdv-content-show{
-    top: 0px;
+
+.content:nth-child(2) article {
+    background-color: blue;
 }
 
 /*------- end portfolio -------*/
