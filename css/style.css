@@ -238,9 +238,18 @@ header div img {
     height: auto;
     overflow: hidden;
     position: relative;
+    font-size: 0;
 }
 
-.
+.portfolio_content article {
+    height: 50%;
+    width: 33.33%;
+    display: inline-block;
+    border: red solid 1px;
+    box-sizing: border-box;
+}
+
+
 
 /*------- end portfolio -------*/
 
