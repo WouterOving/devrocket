@@ -69,4 +69,7 @@ $(document).ready(function () {
         $(this).parent().children('.wdv-persoon').children('.wdv-profile').toggle('blind', 300);
         $(this).children('.wdv-content').toggleClass('wdv-content-show');
     });
+    
+    
+    
 });

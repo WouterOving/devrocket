@@ -109,6 +109,11 @@ nav ul li a {
     transition: ease all 150ms;
 }
 
+.active {
+    color: #0088e3;
+    border-bottom: #0088e3 3px solid;
+}
+
 nav ul li a:hover {
     color: #0088e3;
     border-bottom: #0088e3 3px solid;
