@@ -16,15 +16,23 @@ $(document).ready(function () {
         $('nav ul').removeClass("open_menu");
     });
 	
+	$( ".subtitle" ).delay( 2000 ).fadeIn(  );
+	
 	$("#wds_btn").click(function(){
 		$("#wds_btn").toggleClass("btn_toggle_wds");
 		$(".wds").toggle('blind');
+        $(".wdv").css({
+            display: 'none'
+        })
 				
 	});
 	
 	$("#wdv_btn").click(function(){
 		$("#wdv_btn").toggleClass("btn_toggle_wdv");
 		$(".wdv").toggle('blind');
+        $(".wds").css({
+            display: 'none'
+        })
 		
 	});
 	
