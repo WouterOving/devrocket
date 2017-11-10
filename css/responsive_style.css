@@ -71,6 +71,10 @@
         font-size: 1em;
     }
     
+    .portfolio {
+        display: none;
+    }
+    
     .portfolio div #wds_btn {
         color: #fff;
         border: solid 3px #FFCC33;
@@ -81,6 +85,10 @@
         background-color: #A133FF;
         color: #fff;
         border: solid 3px #A133FF;
+    }
+    .portfolio_content article {
+        width: 50%;
+        height: 50vw;
     }
 
     #footer_wrap {

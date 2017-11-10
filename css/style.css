@@ -225,12 +225,17 @@ header div img {
 /*--- 4. portfolio ---*/
 
 .portfolio {
+    height: 25vw;
+    z-index: 400;
+}
+
+.portfolio_wrap {
     position: relative;
-    height: 50vw;
+    max-height: 25vw;
     width: 100%;
-    text-align: center;
 	overflow: hidden;
-	transition: all 1s;
+	transition: ease all 1s;
+    background-color: #fff;
 }
 
 .portfolio_content {
@@ -239,15 +244,25 @@ header div img {
     overflow: hidden;
     position: relative;
     font-size: 0;
+    transition: all 1s;
 }
 
 .portfolio_content article {
     height: 25vw;
     width: 25%;
     display: inline-block;
-    border: red solid 1px;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.portfolio_content article div {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.portfolio_content article div:hover {
+    transform: scale(1.1);
 }
 
 article img {
@@ -257,14 +272,28 @@ article img {
 }
 
 .port_btn {
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, -2%);
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #0088e3;
+    line-height: 50px;
+    z-index: 300;
+    display: none;
 }
 
-.port_btn i {
-    font-size: 4em;
+.port_btn p {
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    font-weight:bold;
+    height: 100%;
+    width: 100%;
+}
+
+.port_btn p:nth-child(2) {
+    display: none;
 }
 
 
